@@ -11,7 +11,7 @@ time=st.sidebar.slider("공정 시간(분)",1,120,30)
 st.write(f"선택한 공정:**{process}**,온도:{temp}℃,시간:{time}분")
 
 #산화 시뮬레이션
-if process=="산화::
+if process=="산화":
   thickness=0.1*(temp/100)*(time**0.5)
   st.write(f"예산 산화막 두께:**{round(thickness,2)}nm**")
 
