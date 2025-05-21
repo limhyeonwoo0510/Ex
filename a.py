@@ -38,7 +38,7 @@ elif process=="식각":
 elif process=="증착":
   deposition_rate=0.08*(temp/100) #단위:nm/min
   deposited_thickness=deposition_rate*time
-  st.write(f"예상 증착막 두께:**{round(deposited_thickness,2)nm**")
+  st.write(f"예상 증착막 두께:**{round(deposited_thickness,2)}nm**")
 
   fig,ax=plt.subplots()
   ax.plot([0,time],[0,deposited_thickness])
